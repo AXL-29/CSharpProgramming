@@ -7,3 +7,6 @@
 # 3. Learn about constant variable, what are the key features and how to properly use it.
 
 # 4. Learn about different conversion and typecasting.
+
+# 5. Learn about userInput using the Console.ReadLine() and convert it directly to different data types.
+
