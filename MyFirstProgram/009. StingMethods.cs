@@ -58,6 +58,19 @@ namespace MyFirstProgram
             string result = string.Join("-", fruits);
             Console.WriteLine(result);
 
+            // 11. Equals() - Compare two strings (case-sensitive unless specified).
+            string hello = "hello";
+            Console.WriteLine(hello.Equals("HELLO"));       //  False
+            Console.WriteLine(hello.Equals("HELLO", StringComparison.OrdinalIgnoreCase));   // True
+
+            // 12. IsNullOrEmpty() / IsNullOrWhiteSpace() (static)  - Checks if a string has no usable content.
+            string empty = "";
+            Console.WriteLine(string.IsNullOrEmpty(empty));     //  True
+            Console.WriteLine(string.IsNullOrWhiteSpace(" "));  //  True
+
+            // 13. Insert() - add (insert) text at a specific position inside an existing string
+            string insertResult = name.Insert(5, "The ");
+            Console.WriteLine(insertResult);
             Console.ReadKey();
         }
     }
